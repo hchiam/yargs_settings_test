@@ -12,13 +12,14 @@ require("yargs")
       readFile(settingsFileName, function (text) {
         var data = JSON.parse(text);
         var path = data.path;
+        console.log();
         highlightedLog("reading " + settingsFileName + ":");
         console.log(data, "\n");
         highlightedLog("reading " + settingsFileName + " JSON data.path:");
         console.log(path, "\n");
         if (path) {
           readFile(path, function (text) {
-            highlightedLog("reading text in " + path + ":");
+            highlightedLog("using setting path to read text in " + path + ":");
             console.log(text, "\n");
           });
         }

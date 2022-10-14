@@ -5,9 +5,12 @@ yarn install
 ```
 
 ```sh
-node demo --help
-node demo --version
-# node demo ...
+node cmd --help
+node cmd --version
+```
+
+```sh
+node cmd # reads settings.json for a path and reads the text of the file at that path
 ```
 
 ## Notes
