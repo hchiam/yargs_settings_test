@@ -6,7 +6,9 @@
     "lint": "prettier --write *.{js,css,html,scss,json,md,ts,tsx}",
     "es-check": "es-check es5 './**/*.js' --not=node_modules"
   },
-  "dependencies": {},
+  "dependencies": {
+    "yargs": "^17.6.0"
+  },
   "devDependencies": {
     "es-check": "^6.0.0",
     "husky": "^4.3.0",
